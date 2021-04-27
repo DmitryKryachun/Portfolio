@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background: #333;
+    font-size: 2vmin;
+    text-align: center;
+    color: azure;
+    margin: 0;
+    transition: 500ms;
+}
+
+
+header{
+    top: 0;
+    position: sticky;
+    width: 100%;
+    text-transform: uppercase;
+    z-index: 20;
+}
+
+nav h1{
+    margin: 0 4vmin;
+    font-size: 4vmin;
+    transition: 300ms;
+}
+
+button{
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    border-radius: 3vmin;
+    padding: 2vmin;
+    margin: 1vmin;
+    background: #e8c17e;
+    color: #512f26;
+    transition: 300ms;
+}
+
+button:hover{
+    background: #6f3c1f;
+    color: #e4c377;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+nav{
+    background: #333;
+    color: azure;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1vmin;
+    overflow: hidden;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+nav li{
+    margin: 0px 2vmin 0px 2vmin;
+    display: inline;
+    float: left;
+}
+
+nav a:hover {
+    background-color: #3d4a36;
+    transition: 500ms;
+}
+
+nav a{
+    display: block;
+    padding: 8px;
+    background-color: #333;
+    color: azure;
+    transition: 500ms;
+}
+
+.screenshot{
+    width: 50vmin;
+}
+
+.contact{
+    width: 15vmin;
+}
+.contacts_collection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#about{
+    background: url("background.jpg");
+    background-size: 100%;
+
+}
+.aboutContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    backdrop-filter: blur(3px);
+}
+#portfolio{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #3d4a36;
+    color: #f6e7d0;
+}
+
+#contacts{
+    background: #e3c377;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #2c3427;
+    font-size: 5vmin;
+    line-height: 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio .lang{
+    flex-grow: 2;
+    margin: 0 1vmin;
+    padding: 2vmin 0;
+}
+
+#portfolio >h2{
+    font-size: 10vmin;
+    flex-grow: 4;
+    margin: 2vmax;
+}
+
+.contacts_collection img{
+    height: 9vmin;
+}
+
+#about h2{
+    flex-grow: 1;
+    font-size: 10vmin;
+    z-index: 10;
+}
+#about p{
+    flex-grow: 1;
+    z-index: 10;
+}
+#about img{
+    flex-grow: 1;
+    max-width: 20%;
+    margin: 2vmax;
+    z-index: 10;
+}
+img{
+    border-radius: 1vmin;
+}
+
+.window {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+    background-color: #3c3f41;
+    margin: 30vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 5vmin;
+    width: 80%; /* Could be more or less, depending on screen size */
+    animation: animatetop;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-duration: 500ms;
+}
+
+.modal-content a{
+    color: aquamarine;
+}
+
+.modal-content .close{
+    font-size: 3vmin;
+    border-radius: 4vmin;
+    transition: 200ms;
+    padding: 0vmin 1vmin;
+    font-weight: bold;
+    background: #f39f5f;
+}
+
+.modal-content .close:hover{
+    background: #f35f5f;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+@keyframes animatetop {
+    from {top:-40vmin; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@media screen and (max-width: 1081px) {
+    .topnav li{display: none;}
+    .topnav a.hamburger {
+        float: right;
+        display: block;
+    }
+    .topnav h1{
+        font-size: 7vmin;
+    }
+}
+
+
+@media screen and (max-width: 1081px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.hamburger {
+
+    }
+    button{
+        font-size: 3vmin;
+    }
+    .topnav.responsive li {
+        float: none;
+        display: block;
+        text-align: center;
+        font-size: 5vmin;
+    }
+
+}
+
+nav .hamburger {
+    display: none;
+}

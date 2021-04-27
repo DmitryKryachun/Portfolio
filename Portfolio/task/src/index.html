@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kryachun-main</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="flashcards" class="window">
+
+    <div class="modal-content">
+        <span class="close">Закрити</span>
+        <h1>Flashcards</h1>
+        <p>Розважально-навчальна сторінка,
+            на якій є карточки з назвою країн,
+            а при наведені показується столиця
+            цієї країни. Сайт було створенно при проходженні курсу на сайті <a href="https://hyperskill.org/">hyperskill.org</a>.
+            При наведенні мишою на картку-країну, вона плавно перевертається і показує столицю країни</p>
+        <p>Скачати проект тут:</p>
+        <a href="https://github.com/DmitryKryachun/Flashcards" title="Github" style="text-transform: uppercase">github</a>
+    </div>
+
+</div>
+
+<div id="birthdayInfo" class="window">
+
+    <div class="modal-content">
+        <span class="close">Закрити</span>
+        <h1>ППФК Дні Народження</h1>
+        <p>Програма перевіряє в кого сьогодні
+            день народження і відправляє привітання.
+            Має графічний інтерфейс для роботи з БД.
+            Можливо додавати працівників, та привітання.
+            Всі поля перевіряються на правильність введення.
+            Має вже вбудовані чоловічі і жіночі вітання.
+            Написано мовою Java, використано Sqlite DB, Swing
+            Створена на практиці з ТРПЗ.</p>
+        <p>Скачати проект тут:</p>
+        <a href="https://github.com/thxnk/Knights" title="Github" style="text-transform: uppercase">github</a>
+    </div>
+
+</div>
+
+<header>
+    <nav class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            <img style="width: 40px" src="hamburger.png">
+        </a>
+        <ul>
+            <li><a href="https://github.com/DmitryKryachun" target="_blank">github</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contacts">contacts</a></li>
+        </ul>
+        <h1>Kryachun</h1>
+    </nav>
+</header>
+<section id="about">
+    <div class="aboutContent">
+    <h2>About me</h2>
+    <img class="face" src="face.jpg" alt="face">
+    <p> Мене звуть Крячун Дмитро Олександрович, <br>
+        навчаюсь в ППФК НТУ ХПІ з 2018 року. <br>
+        Спеціальність - "Розробка ПЗ" </p>
+    </div>
+</section>
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="lang">
+    <h3>ППФК ДН</h3>
+    <br>
+    <img class="screenshot" src="PPFC.png" alt="screenshot">
+    <p> Програма перевіряє в кого сьогодні <br>
+        день народження і відправляє привітання <br>
+        Має графічний інтерфейс для роботи з БД.<br>
+        Створена на практиці з ТРПЗ<br>
+    </p>
+        <button id="javaButton" class="open-window">Детальніше</button>
+    </div>
+    <div class="lang">
+        <h3>Flashcards</h3>
+        <img class="screenshot" src="html.png" alt="screenshot">
+        <p> Розважально-навчальна сторінка,<br>
+        на якій є карточки з назвою країн,<br>
+        а при наведені показується столиця<br>
+        цієї країни<br>
+        </p>
+        <button id="httpButton" class="open-window">Детальніше</button>
+    </div>
+    <div class="lang">
+        <h3>HTML + CSS + JS</h3>
+        <img class="screenshot" style="border: outset black 1px" src="portfolio.png" alt="screenshot">
+        <p> Cайт-портфоліо,<br>
+            на якому ви зараз:)
+        </p>
+    </div>
+</section>
+<section id="contacts">
+    <h2>Contacts</h2>
+    <div class="contacts_collection">
+        <div class="contact">
+            <a href="https://instagram.com/dmitry.kryachun" title="insta"><img class="logo" src="instagram.svg" alt="Instagram logo"></a>
+        </div>
+        <div class="contact">
+            <a href="https://www.facebook.com/profile.php?id=100004341858159" title="facebook"><img class="logo" src="facebook.svg" alt="Facebook logo"></a>
+        </div>
+        <div class="contact">
+            <a href="https://t.me/dmitriykryachun" title="telegram"><img class="logo" src="telegram.svg" alt="Telegram Logo"></a>
+        </div>
+    </div>
+</section>
+<footer>
+<p>Dmitry Kryachun<br> BuzivkaCity <br> 2021</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
